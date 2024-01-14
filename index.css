@@ -1,0 +1,614 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #000;
+
+    min-height: 100vh;
+  
+}
+@media (min-width: 900px){
+    body{
+        height: 100vh;
+
+    }
+    header{
+        display: flex;
+        position: fixed;
+        width: 100%;
+        height: 8%;
+        background: blue;
+        z-index: 1000;
+    }
+    .search{
+        position: absolute;
+        display: flex;
+        left: 20rem;
+        top: 15px;
+        
+    }
+    .nav2{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(2, 7, 70, 0.432);
+        width: 120%;
+        height: 25%;
+        border: 1px solid blue;
+        border-left: none;
+    }
+    .slide-frame{
+        overflow: hidden;
+        left: 35%;
+        height: 15%;
+        width: 100%;
+        position: relative;
+        display: flex;
+        
+    }
+    .products{
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+    .products .box-container .box{
+        position: relative;
+        height: 35rem;
+        flex: 2 2 30rem;
+        border-radius: .5rem;
+        border: 1px solid blue;
+    }
+    .products .box-container{
+        position: absolute;
+         display: flex;
+         flex-wrap: wrap;
+         gap: 1.5rem;
+         height: 30%;
+     }
+     .review-box{
+        padding-top: 15%;
+    }
+    .review{
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+    .review .h3 h3{
+        position: fixed;
+        display: flex;
+        top: 10%;
+        left: 30%;
+        font-size: 2.5rem;
+        color: blue;
+    }
+    .review-container{
+        position: relative;
+        display: flex;
+        top: 30%;
+        left: 0%;
+        width: 89%;
+        padding-right: 10%;
+        height: 50%;
+        border: 2px solid blue;flex: 1 1 30rem;
+    }
+    .video .video-container{
+        position: absolute;
+        display: flex;
+        left: 30%;
+        top: 25%;
+        height: 60%;
+        width: 50%;
+        background-color: #000;
+    }
+    .video .video-container video{
+        height: 60%;
+        width: 60%;
+       
+    }
+}
+@media (min-width: 600px){
+    .video .video-container video{
+        height: 60%;
+        width: 80%;
+    }
+    .video .video-container{
+        position: absolute;
+        display: flex;
+        left: 10%;
+        top: 24%;
+        }
+        .about-text p{
+            font-size: .80rem;
+            color: white;
+            max-width: 450px;
+        }
+}
+.box{
+    position: relative;
+    display: flex;
+    top: 70px;
+    left: 250px;
+   width: 750px;
+   height: 550px;
+   background: rgba(2, 7, 70, 0.432);
+   border-radius: 5px;
+   border: 1px solid blue;
+}
+h2{
+    font-size: xx-large;
+    color: white;
+    padding: 20px 50px;
+}
+.h span{
+    position: absolute;
+    font-weight: bold;
+    color: rgba(228, 228, 228, 0.767);
+    padding: 170px 0px;
+    left: 20px;
+}
+.box2{
+    position: relative;
+    display: flex;
+    width: 300px;
+    height: 550px;
+    background: blue;
+}
+.user-data{
+    position: absolute;
+    top: 200px;
+    right: 320px;
+    
+}
+.user-data a{
+    color: blue;
+}
+.user-info input{
+    padding: 5px;
+    top: 5px;
+    width: 18rem;
+    border: 2px solid blue;
+    
+
+}
+.user-info{
+    position: relative;
+    top: -30px;
+    padding: 10px 3px;
+    
+}
+.but a{
+    position: relative;
+    display: flex;
+    left: 10px;
+   justify-content: center;
+   align-items: center;
+    font-weight: bold;
+    width: 300px;
+    height: 50px;
+    background: blue;
+    color: white;
+    font-size: large;
+    top: 30px;
+    text-decoration: none;
+}
+.terms label{
+    position: absolute;
+    font-size: medium;
+    padding-bottom: 10px;
+    color: #fff;
+}
+.create-acct{
+    position: relative;
+    display: flex;
+   top: 50px;
+}
+.create-acct span{
+    color: #fff;
+}
+.create-acct a{
+    color: blue;
+}
+h1{
+    padding-top: 40px;
+    font-size: medium;
+    color: blue;
+}
+.but button{
+    position: relative;
+    display: flex;
+    left: 10px;
+   justify-content: center;
+   align-items: center;
+    font-weight: bold;
+    width: 300px;
+    height: 50px;
+    font-size: large;
+    top: 30px;
+}
+/*----navbar-----*/
+.nav{
+    padding: 0px 15px;
+    
+}
+.nav .icons{
+    position: absolute;
+    display: flex;
+    right: 50px;
+    top: 15px;
+    
+}
+.nav .icons .about{
+    padding: 0px 15px;
+    font-size: larger;
+}
+.nav .icons i{
+    font-size: x-large;
+    color: #fff;
+}
+
+.search input{
+    display: flex;
+    position: relative;
+    width: 20rem;
+}
+.search label{
+    padding: 0px 10px;
+   
+}
+.search i{
+    color: #000;
+}
+.logo h1{
+    display: flex;
+    position: absolute;
+    padding-top: 8px;
+    font-size: larger;
+    color: white;
+}
+.logo span{
+    color: #000;
+}
+.home label a{
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+.about label a{
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+.review label a{
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+/*---nav2----*/
+
+.nav2 img{
+    display: flex;
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    padding-top: 3%;
+    gap: 3%;
+}
+.nav2 div{
+    padding: 80px 45px;
+    
+    
+}
+.nav2 p{
+    padding-top: 1%;
+    color: blue;
+}
+
+.h3 h3{
+    color: #fff;
+    font-size: 3rem;
+    padding-left: 350px;
+    padding-top: 1%;
+}
+.h3 span{
+    color: blue;
+}
+
+/*-----slideshow-----*/
+
+@-webkit-keyframes slide_animation{
+    0% {left: 0px;}
+    10% {left: 0px;}
+    20% {left: 1200px;}
+    30% {left: 1200px;}
+    40% {left: 2400px;}
+    50% {left: 2400px;}
+    60% {left: 1200px;}
+    70% {left: 1200px;}
+    80% {left: 0px;}
+    90% {left: 0px;}
+    100% {left: 0px;}
+    
+}
+.slide-img{
+    width: 3600px;
+    height: 200px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    -webkit-animation-name: slide_animation ;
+    -webkit-animation-duration: 28s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+}
+.img-container{
+    position: relative;
+    height: 230px;
+    width: 1210px;
+    display: flex;
+    float: left;
+}
+/*----- products -----*/
+
+
+.products .box-container .box .content{
+    position: absolute;
+    top: 65%;
+    left: 30%;
+}
+.products .box-container .box .image img{
+    height: 20rem;
+    
+}
+.products .box-container .box h3{
+    color: blue;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.products .box-container .box .image{
+    padding: 3rem 3rem;
+    position: absolute;
+    left: 13%;
+}
+.products .box-container .box .dis{
+    position: absolute;
+    bottom: 4rem;
+    padding: 0rem 6rem;
+    
+}
+.products .box-container .box .dis p{
+    color: #fff;
+    max-width: 25rem;
+}
+.products .box-container .box .price{
+    position: absolute;
+    bottom: 2rem;
+    left: 5rem;
+}
+.products .box-container .box .price{
+    font-size: 1.5rem;
+    color: green;
+    font-weight: bolder;
+}
+
+.products .box-container .box .price span{
+    font-size: .90rem;
+    color: red;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+.products .box-container .box .btn{
+    position: absolute;
+    bottom: 2rem;
+    right: 5rem;
+}
+.products .box-container .box .btn a{
+    position: relative;
+    display: flex;
+    font-size: 1.5rem;
+    background-color: blue;
+    color: #fff;
+    font-weight: bolder;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 70px;
+    border-radius: 5px;
+}
+.products .box-container .box .btn a:hover{
+    background-color: green;
+}
+/*----- reviews -------*/
+
+
+.review .h3 span{
+    color: white;
+}
+
+.review-container .box{
+    position: relative;
+    display: flex;
+    height: 60%;
+    width: 25%;
+    left: 5%;
+   justify-content: space-between;
+}
+.review-container .box .stars{
+    position: relative;
+    display: flex;
+    flex: 1 1 30rem;
+    top: 5%;
+    left: 3%;
+}
+.review-container .box .stars i{
+    color: yellow;
+}
+.review-container .box img{
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    height: 30%;
+    width: 25%;
+    border-radius: 50%;
+}
+.review-container .box h2{
+    position: absolute;
+    display: flex;
+    font-size: small;
+    color: blue;
+    bottom: 3%;
+    left: 13%;
+}
+.review-container .box h2 span{
+    position: absolute;
+    bottom: 5%;
+    font-size: 10px;
+    color: rgba(238, 238, 238, 0.438);
+}
+.review-container .box p{
+    position: absolute;
+    display: flex;
+    color: white;
+    font-size: small;
+    top: 10%;
+    left: 3%;
+}
+/*------- about ------*/
+
+.about h3{
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    color: blue;
+    font-size: 2.5rem;
+}
+.about h3 span{
+    color: white;
+}
+
+.about-text{
+    position: absolute;
+    left: 55%;
+    top: 25%;
+}
+
+.cont{
+    display: flex;
+    position: absolute;
+    height: 28%;
+    width: 100%;
+    background: rgba(2, 7, 70, 0.432);
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    top: 80%;
+}
+.cont .icons{
+    position: relative;
+    background: rgba(2, 7, 70, 0.432);
+    border: 1px solid blue;
+    display: flex;
+    align-items: center;
+    flex: 1 1 25rem;
+    height: 95%;
+    width: 30%;
+    
+}
+.cont .icons img{
+    height: 50%;
+    padding: 0% 10%;
+}
+.cont h3{
+    font-size: 1rem;
+    color: white;
+}
+.cont span{
+    padding: 1rem;
+    font-size: .80rem;
+    color: #555;
+}
+.payments{
+    position: absolute;
+    right: 5%;
+    top: 155%;
+}
+.locations h3{
+    color: blue;
+}
+.contact h3{
+    color: blue;
+}
+.contact{
+    position: absolute;
+    left: 28%;
+    top: 150%;
+}
+.contact li{
+    padding: 5px 0px;
+}
+.contact i{
+    color: blue;
+}
+.locations{
+    position: absolute;
+    left: 5%;
+    top: 150%;
+}
+.locations li{
+    padding: 5px 0px;
+    
+}
+.locations a:hover{
+    color: white;
+}
+.contact a:hover{
+    color: white;
+}
+
+.cont1{
+    display: flex;
+    position: absolute;
+    height: 28%;
+    width: 100%;
+    background: rgba(2, 7, 70, 0.432);
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    top: 625%;
+    
+}
+.cont1 .icons{
+    border: 1px solid blue;
+    position: relative;
+    background: #fff;
+    background: rgba(2, 7, 70, 0.432);
+    display: flex;
+    align-items: center;
+    flex: 1 1 25rem;
+    height: 95%;
+    width: 30%;
+}
+.cont1 .icons img{
+    height: 50%;
+    padding: 0% 10%;
+}
+.cont1 h3{
+    font-size: 1rem;
+    color: white;
+}
+.cont1 span{
+    padding: 1rem;
+    font-size: .80rem;
+    color: #555;
+}
+.end1{
+    position: relative;
+    top: 55%;
+}

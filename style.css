@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+.box{
+   border-radius: 3px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%); 
+   width: 750px;
+   height: 560px;
+   background: #fff;
+
+}
+.inline-text{
+    position: absolute;
+    color: white;
+    top: 32px;
+    left: 55px;
+}
+.inline-text h1{
+    max-width: 15px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.inline-text p{
+    color: rgb(228, 228, 228);
+    opacity: 1.5;
+    font-size: 13px;
+    letter-spacing: 1px;
+    max-width: 10px;
+}
+.box1{
+    height: 91.5vh;
+    background-color: royalblue;
+}
+.box-2 .user-data input ~ label,
+.box-2 .user-data input:valid ~ label{
+    top: -20px;
+    font-size: 12px;
+}
+.box-2 .user-data input:focus{
+    border-bottom: 1px solid royalblue;
+}
+.box-2 span a{
+    position: absolute;
+    top: 140px;
+    left: 315px;
+    display: inline;
+    color:royalblue ;
+    font-weight: 600;
+}
+.user-id p{
+    height: 0px;
+    color: rgb(228, 228, 228);
+}
+.box-2 .button input{
+    padding-top: 150px;
+    height: 0px;
+    font-size: 18px;
+    border: none;
+    background: white; 
+}
+.box-2 .button input[type=submit]{
+    position: relative;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    display: flex;
+    bottom: -150px;
+    height: 30px;
+    width: 350px;
+    background: orange;
+    border-radius: 2px;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    outline: none;
+    transition: 0.5s;
+    margin-top: none;
+    justify-content: center;
+    align-items: center;
+}
+.user-data{
+    position: relative;
+    top: 20px;
+    padding: 8px;
+   
+}
+.user-data input{
+    width: 240px;
+    border-bottom: 2px black;
+}
+.user-id1{
+    position: absolute;
+    display: flex;
+ top: 130px;
+ font-size: 13px;
+ padding: 2px 2px;
+}
+.user-id1 p{
+    padding: 8px;
+}
+.user-id2{
+    position: absolute;
+    display: flex;
+    color: black;
+    top: 320px;
+    font-size: larger;
+    font-weight: bold;
+    right: 230px;
+}
+.user-id3{
+    position: relative;
+    display: flex;
+    top: 250px;
+    color: black;
+    left: 130px;
+}
+.user-id3 input{
+    display: flex;
+    position: relative;
+    color: blue;
+    background: white;
+    box-shadow: 1rem solid rgba(46, 46, 46, 0.116);
+}
+.user-id4{
+    position: absolute;
+    display: flex;
+    bottom: 50px;
+    left: 380px;
+}
